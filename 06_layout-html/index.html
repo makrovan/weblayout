@@ -4,21 +4,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Lagoona</title>
 </head>
 
 <body>
   <header class="header">
-    <div class="contaner">
-      <a href="#" class="header-logo">
-        <img src="img/logo.png" alt="Logo" class="header-logo-img">
-      </a>
-      <address class="header-address-phone">
-        <a href="tel:+74953225448" class="phone-link">+7&nbsp;495 322-54-48</a>
-      </address>
-      <a href="#" class="input-link">Личный кабинет</a>
-      <nav class="header-nav">
-        <ul class="header-list">
+    <div class="container">
+      <div class="header-up flex">
+        <a href="#" class="header-logo">
+          <img src="img/logo.png" alt="Logo" class="header-logo-img">
+        </a>
+        <address class="header-address-phone">
+          <a href="tel:+74953225448" class="phone-link">+7&nbsp;495 322-54-48</a>
+        </address>
+        <a href="#" class="input-link">Личный кабинет</a>
+      </div>
+      <nav class="header-nav flex">
+        <ul class="header-list list-reset flex">
           <li class="header-list-item">
             <a href="#about-us" class="header-link">О&nbsp;нас</a>
           </li>
@@ -38,8 +42,8 @@
             <a href="#contacts" class="header-link">Контакты</a>
           </li>
         </ul>
-        <button class="btn header-btn-tour">Хочу тур</button>
-        <button class="btn header-btn-back-call">Обратный звонок</button>
+        <button class="btn header-btn-tour btn-reset">Хочу тур</button>
+        <button class="btn header-btn-back-call btn-reset">Обратный звонок</button>
       </nav>
     </div>
   </header>
@@ -48,20 +52,20 @@
       <div class="container">
         <div class="discount-content">
           <h2 class="section-title discount-title">Спецпредложения</h2>
-          <ul class="discount-items">
-            <li class="discount-item">
+          <ul class="discount-items list-reset flex list-flex-style">
+            <li class="discount-item flex">
               <h3 class="discount-item-title">Мальдивские острова</h3>
               <p class="discount-item-descr">от&nbsp;55&nbsp;000&nbsp;₽</p>
               <a href="#" class="item-link discount-item-link">Подробнее</a>
             </li>
-            <li class="discount-item">
-              <h3 class="discount-item-title">Номера категории люкс</h3>
-              <p class="discount-item-descr">от&nbsp;5&nbsp;000&nbsp;₽</p>
-              <a href="#" class="item-link discount-item-link">Подробнее</a>
-            </li>
-            <li class="discount-item">
+            <li class="discount-item flex">
               <h3 class="discount-item-title">Горящий тур на&nbsp;остров Крит</h3>
               <p class="discount-item-descr">от&nbsp;30&nbsp;000&nbsp;₽</p>
+              <a href="#" class="item-link discount-item-link">Подробнее</a>
+            </li>
+            <li class="discount-item flex">
+              <h3 class="discount-item-title">Номера категории люкс</h3>
+              <p class="discount-item-descr">от&nbsp;5&nbsp;000&nbsp;₽</p>
               <a href="#" class="item-link discount-item-link">Подробнее</a>
             </li>
           </ul>
@@ -85,23 +89,23 @@
     <section id="services" class="services">
       <div class="container">
         <h2 class="section-title services-title">Услуги</h2>
-        <ul class="services-items">
-          <li class="services-item">
+        <ul class="services-items list-reset flex list-flex-style">
+          <li class="services-item flex">
             <a href="#" class="item-link services-item-link">Эксклюзивное обслуживание</a>
             <p class="descr services-item-descr">Равным образом постоянный количественный рост и&nbsp;сфера нашей
               активности</p>
           </li>
-          <li class="services-item">
+          <li class="services-item flex">
             <a href="#" class="item-link services-item-link">Аренда банкетных залов</a>
             <p class="descr services-item-descr">Значимость этих проблем настолько очевидна, что дальнейшее развитие
               различных форм</p>
           </li>
-          <li class="services-item">
+          <li class="services-item flex">
             <a href="#" class="item-link services-item-link">Сауны, бассейны, бани, фитнес-залы</a>
             <p class="descr services-item-descr">Не&nbsp;следует, однако забывать, что начало повседневной работы
               по&nbsp;формированию позиции</p>
           </li>
-          <li class="services-item">
+          <li class="services-item flex">
             <a href="#" class="item-link services-item-link">Охраняемые автомобильные стоянки</a>
             <p class="descr services-item-descr">Не&nbsp;следует, однако забывать, что начало повседневной работы
               по&nbsp;формированию позиции</p>
@@ -112,37 +116,37 @@
     <section id="benefits" class="benefits">
       <div class="container">
         <h2 class="section-title benefits-title">Преимущества</h2>
-        <ul class="benefits-items">
+        <ul class="benefits-items list-reset flex list-flex-style">
           <li class="benefits-item">
-            <p class="descr benefits-item-desccr">Идейные соображения высшего порядка,
+            <p class="descr benefits-item-descr">Идейные соображения высшего порядка,
               а&nbsp;также постоянный количественный рост</p>
           </li>
           <li class="benefits-item">
-            <p class="descr benefits-item-desccr">Значимость этих проблем настолько очевидна, что вопрос остаётся
+            <p class="descr benefits-item-descr">Значимость этих проблем настолько очевидна, что вопрос остаётся
               открытым</p>
           </li>
           <li class="benefits-item">
-            <p class="descr benefits-item-desccr">Таким образом реализация плановых заданий играет важную роль для
+            <p class="descr benefits-item-descr">Таким образом реализация плановых заданий играет важную роль для
               понимания</p>
           </li>
           <li class="benefits-item">
-            <p class="descr benefits-item-desccr">Повседневная практика показывает, что сложившаяся структура
+            <p class="descr benefits-item-descr">Повседневная практика показывает, что сложившаяся структура
               организации</p>
           </li>
           <li class="benefits-item">
-            <p class="descr benefits-item-desccr">Равным образом рамки и&nbsp;место обучения кадров способствует
+            <p class="descr benefits-item-descr">Равным образом рамки и&nbsp;место обучения кадров способствует
               подготовки сотрудника</p>
           </li>
           <li class="benefits-item">
-            <p class="descr benefits-item-desccr">Консультация с&nbsp;активом влечёт за&nbsp;собой процесс внедрения
+            <p class="descr benefits-item-descr">Консультация с&nbsp;активом влечёт за&nbsp;собой процесс внедрения
               услуг нашего сервиса</p>
           </li>
           <li class="benefits-item">
-            <p class="descr benefits-item-desccr">Повседневная практика показывает, что дальнейшее развитие различных
+            <p class="descr benefits-item-descr">Повседневная практика показывает, что дальнейшее развитие различных
             </p>
           </li>
           <li class="benefits-item">
-            <p class="descr benefits-item-desccr">Значимость этого настолько очевидна, что консультация наших экспертов
+            <p class="descr benefits-item-descr">Значимость этого настолько очевидна, что консультация наших экспертов
               помогает</p>
           </li>
         </ul>
@@ -151,10 +155,10 @@
     <section id="allocation" class="allocation">
       <div class="container">
         <h2 class="section-title allocation-title">Размещение</h2>
-        <ul class="alloation-items">
+        <ul class="alloation-items list-reset flex list-flex-style">
           <li class="allocation-item">
             <img src="img/23.png" alt="spa-photo" class="allocation-item-img">
-            <p class="allocation-item-price"><span class="desc allocation-item-desc">от</span><strong
+            <p class="allocation-item-price"><span class="descr allocation-item-desc">от</span><strong
                 class="allocation-item-price-numbers">4&nbsp;698&nbsp;₽</strong><span
                 class="allocation-item-price-measure">/ ночь</span></p>
             <img src="img/star.png" alt="Рейтинг гостиницы 4 из 5" class="allocation-item-star">
@@ -168,7 +172,7 @@
           </li>
           <li class="allocation-item">
             <img src="img/24.png" alt="spa-photo" class="allocation-item-img">
-            <p class="allocation-item-price"><span class="desc allocation-item-desc">от</span><strong
+            <p class="allocation-item-price"><span class="descr allocation-item-desc">от</span><strong
                 class="allocation-item-price-numbers">5&nbsp;148&nbsp;₽</strong><span
                 class="allocation-item-price-measure">/ ночь</span></p>
             <img src="img/star.png" alt="Рейтинг гостиницы 4 из 5" class="allocation-item-star">
@@ -182,7 +186,7 @@
           </li>
           <li class="allocation-item">
             <img src="img/26.png" alt="spa-photo" class="allocation-item-img">
-            <p class="allocation-item-price"><span class="desc allocation-item-desc">от</span><strong
+            <p class="allocation-item-price"><span class="descr allocation-item-desc">от</span><strong
                 class="allocation-item-price-numbers">6&nbsp;254&nbsp;₽</strong><span
                 class="allocation-item-price-measure">/ ночь</span></p>
             <img src="img/star.png" alt="Рейтинг гостиницы 5 из 5" class="allocation-item-star">
@@ -196,7 +200,7 @@
           </li>
           <li class="allocation-item">
             <img src="img/29-1.png" alt="spa-photo" class="allocation-item-img">
-            <p class="allocation-item-price"><span class="desc allocation-item-desc">от</span><strong
+            <p class="allocation-item-price"><span class="descr allocation-item-desc">от</span><strong
                 class="allocation-item-price-numbers">6&nbsp;320&nbsp;₽</strong><span
                 class="allocation-item-price-measure">/ ночь</span></p>
             <img src="img/star.png" alt="Рейтинг гостиницы 5 из 5" class="allocation-item-star">
@@ -210,7 +214,7 @@
           </li>
           <li class="allocation-item">
             <img src="img/30.png" alt="spa-photo" class="allocation-item-img">
-            <p class="allocation-item-price"><span class="desc allocation-item-desc">от</span><strong
+            <p class="allocation-item-price"><span class="descr allocation-item-desc">от</span><strong
                 class="allocation-item-price-numbers">6&nbsp;457&nbsp;₽</strong><span
                 class="allocation-item-price-measure">/ ночь</span></p>
             <img src="img/star.png" alt="Рейтинг гостиницы 4 из 5" class="allocation-item-star">
@@ -224,7 +228,7 @@
           </li>
           <li class="allocation-item">
             <img src="img/31.png" alt="spa-photo" class="allocation-item-img">
-            <p class="allocation-item-price"><span class="desc allocation-item-desc">от</span><strong
+            <p class="allocation-item-price"><span class="descr allocation-item-desc">от</span><strong
                 class="allocation-item-price-numbers">6&nbsp;320&nbsp;₽</strong><span
                 class="allocation-item-price-measure">/ ночь</span></p>
             <img src="img/star.png" alt="Рейтинг гостиницы 4 из 5" class="allocation-item-star">
@@ -238,7 +242,7 @@
           </li>
           <li class="allocation-item">
             <img src="img/27.png" alt="spa-photo" class="allocation-item-img">
-            <p class="allocation-item-price"><span class="desc allocation-item-desc">от</span><strong
+            <p class="allocation-item-price"><span class="descr allocation-item-desc">от</span><strong
                 class="allocation-item-price-numbers">6&nbsp;505&nbsp;₽</strong><span
                 class="allocation-item-price-measure">/ ночь</span></p>
             <img src="img/star.png" alt="Рейтинг гостиницы 5 из 5" class="allocation-item-star">
@@ -252,7 +256,7 @@
           </li>
           <li class="allocation-item">
             <img src="img/29.png" alt="" class="allocation-item-img">
-            <p class="allocation-item-price"><span class="desc allocation-item-desc">от</span><strong
+            <p class="allocation-item-price"><span class="descr allocation-item-desc">от</span><strong
                 class="allocation-item-price-numbers">6&nbsp;824&nbsp;₽</strong><span
                 class="allocation-item-price-measure">/ ночь</span></p>
             <img src="img/star.png" alt="Рейтинг гостиницы 5 из 5" class="allocation-item-star">
