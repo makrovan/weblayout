@@ -17,9 +17,47 @@ img {
   max-width: 100%;
 }
 
+@font-face {
+  font-family: 'Muller';
+  src: local('MullerRegular'), url('../fonts/MullerRegular.woff2') format("woff2"),
+    url(../fonts/MullerRegular.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: local('MullerLight'), url('../fonts/MullerLight.woff2') format("woff2"),
+    url(../fonts/MullerLight.woff) format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: local('MullerBold'), url('../fonts/MullerBold.woff2') format("woff2"),
+    url(../fonts/MullerBold.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: local('MullerMedium'), url('../fonts/MullerMedium.woff2') format("woff2"),
+    url(../fonts/MullerMedium.woff) format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   min-width: 1200px;
-  font-family: 'font', sans-serif;
+  font-family: 'Muller', sans-serif;
+  font-weight: 400;
+  background-color: #f1f1f1;
 }
 
 /* glob */
@@ -42,6 +80,17 @@ body {
   cursor: pointer;
 }
 
+.btn {
+  border: 1px solid #cc9933;
+  border-radius: 10px;
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #cc9933;
+}
+
 .flex {
   display: flex;
 }
@@ -54,11 +103,29 @@ body {
 
 .section-title {
   margin: 0 0 20px 40px;
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #333;
 }
 
 .descr {
   margin: 0;
   padding: 0;
+}
+
+.link-extra {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  left: 130.72px;
+  top: 209.78px;
+  border: 2px solid;
+  border-top: 0;
+  border-left: 0;
+  transform: rotate(-45deg);
 }
 
 /* header */
@@ -74,27 +141,56 @@ body {
   margin-top: 30px;
   min-height: 70px;
   align-items: center;
+  background-color: #fff;
+  border-radius: 15px;
 }
 
 .input-link {
   margin-left: auto;
+  padding-left: 29px;
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #cc9933;
+  background-image: url('../img/keyboard_tab.svg');
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
 }
 
 .header-address-phone {
   margin-left: 40px;
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: #666;
 }
 
 .header-btn-back-call {
   margin-left: 40px;
   margin-right: 45px;
+  width: 177px;
+  height: 42px;
 }
 
 .header-btn-tour {
   margin-left: auto;
+  width: 107px;
+  height: 42px;
 }
 
 .header-list-item {
   margin-left: 45px;
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #666;
 }
 
 /* discount */
@@ -111,26 +207,80 @@ body {
   flex-direction: column;
   justify-content: flex-end;
 
-  outline: 1px solid coral;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  overflow: hidden;
+  border-radius: 15px;
 }
 
 .discount-item:last-child {
   flex-grow: 1;
 }
 
+.discount-item1 {
+  background-image: url('../img/discount_item1.jpg');
+}
+
+.discount-item2 {
+  background-image: url('../img/discount_item2.jpg');
+}
+
+.discount-item3 {
+  background-image: url('../img/discount_item3.jpg');
+}
+
 .discount-item-link {
   margin-top: 47px;
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #f0bf5f;
 }
 
 .discount-item-descr {
   margin: 0;
   margin-top: 15px;
+  font-size: 20px;
+  line-height: 20px;
+  color: #fff;
+}
+
+.discount-item-title {
+  margin: 0;
+  width: 420px;
+  height: 80px;
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  color: #fff;
+}
+
+.discount-item-title-big {
+  margin: 0;
+  width: 299px;
+  height: 180px;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 60px;
+  color: #fff;
 }
 
 /* about-us */
 .about-us-content {
   margin: 0;
   max-width: 882px;
+}
+
+.about-us-descr {
+  font-size: 16px;
+  line-height: 200%;
+  color: #000;
 }
 
 /* services */
@@ -142,12 +292,49 @@ body {
   min-height: 330px;
   width: 573px;
 
-  padding: 25px 125px 35px 45px;
+  padding: 25px 126px 35px 45px;
   flex-direction: column;
   justify-content: flex-end;
 
-  outline: 1px solid coral;
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 573px 165px;
 }
+
+.services-item-1 {
+  background-image: url('../img/service-item-1.jpg');
+}
+
+.services-item-2 {
+  background-image: url('../img/service-item-2.jpg');
+}
+
+.services-item-3 {
+  background-image: url('../img/service-item-3.jpg');
+}
+
+.services-item-4 {
+  background-image: url('../img/service-item-4.jpg');
+}
+
+.services-item-descr {
+  font-size: 16px;
+  line-height: 200%;
+  color: #000;
+}
+
+.services-item-link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 200%;
+  color: #cc9933;
+}
+
+.services-item-link-extra {}
 
 /* benefits */
 .benefits-items {
@@ -158,8 +345,49 @@ body {
   width: 276px;
   min-height: 276px;
   padding: 116px 42px 32px 45px;
+  background-color: #fff;
+  border-radius: 15px;
+  background-position: 45px 40px;
+  background-repeat: no-repeat;
+}
 
-  outline: 1px solid coral;
+.benefits-item-1 {
+  background-image: url('../img/benefits-item-1.svg');
+}
+
+.benefits-item-2 {
+  background-image: url('../img/benefits-item-2.svg');
+}
+
+.benefits-item-3 {
+  background-image: url('../img/benefits-item-3.svg');
+}
+
+.benefits-item-4 {
+  background-image: url('../img/benefits-item-4.svg');
+}
+
+.benefits-item-5 {
+  background-image: url('../img/benefits-item-5.svg');
+}
+
+.benefits-item-6 {
+  background-image: url('../img/benefits-item-6.svg');
+}
+
+.benefits-item-7 {
+  background-image: url('../img/benefits-item-7.svg');
+}
+
+.benefits-item-8 {
+  background-image: url('../img/benefits-item-8.svg');
+}
+
+.benefits-item-descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000;
 }
 
 /* allocation */
@@ -168,21 +396,87 @@ body {
 }
 
 .allocation-item {
+  flex-direction: column;
+
   min-height: 440px;
   width: 374px;
 
-  outline: 1px solid coral;
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
 }
 
+.allocation-item-up-line {
+  margin-left: 45px;
+  margin-top: 32px;
+}
+
+
 .allocation-item-price {
+  margin: 0;
   display: inline;
 }
 
-.allocation-item-title,
 .allocation-item-desc {
-  padding-left: 45px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #999;
+}
+
+.allocation-item-price-numbers {
+  margin-left: 4px;
+  margin-right: 4px;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000;
+}
+
+.allocation-item-price-measure {
+  margin-right: 52px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000;
+}
+
+.allocation-item-title {
+  margin: 0;
+  margin-left: 45px;
+  margin-top: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000;
+}
+
+.allocation-item-desc1 {
+  margin: 0;
+  margin-top: 16px;
+  margin-left: 45px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #999;
 }
 
 .allocation-item-btn {
-  margin: 45px;
+  margin: 0;
+  margin-top: 20px;
+  margin-left: 45px;
+  width: 100px;
+  height: 42px;
+}
+
+.allocation-item:last-child {
+  background-image: url('../img/41.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.allocation-item-link {
+  margin: auto auto 27px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 200%;
+  color: #FFF;
+  align-items: center;
 }
