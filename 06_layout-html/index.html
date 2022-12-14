@@ -11,39 +11,41 @@
 
 <body>
   <header class="header">
-    <div class="header-up flex">
-      <a href="#" class="header-logo">
-        <img src="img/logo.png" alt="Logo" class="header-logo-img">
-      </a>
-      <address class="header-address-phone">
-        <a href="tel:+74953225448" class="phone-link">+7&nbsp;495 322-54-48</a>
-      </address>
-      <a href="#" class="input-link">Личный кабинет</a>
+    <div class="container">
+      <div class="header-up flex">
+        <a href="#" class="header-logo">
+          <img src="img/logo.png" alt="Logo" class="header-logo-img">
+        </a>
+        <address class="header-address-phone">
+          <a href="tel:+74953225448" class="phone-link">+7&nbsp;495 322-54-48</a>
+        </address>
+        <a href="#" class="input-link">Личный кабинет</a>
+      </div>
+      <nav class="header-nav flex">
+        <ul class="header-list list-reset flex">
+          <li class="header-list-item">
+            <a href="#about-us" class="header-link">О&nbsp;нас</a>
+          </li>
+          <li class="header-list-item">
+            <a href="#services" class="header-link">Услуги</a>
+          </li>
+          <li class="header-list-item">
+            <a href="#benefits" class="header-link">Преимущества</a>
+          </li>
+          <li class="header-list-item">
+            <a href="#allocation" class="header-link">Размещение</a>
+          </li>
+          <li class="header-list-item">
+            <a href="#order" class="header-link">Блог</a>
+          </li>
+          <li class="header-list-item">
+            <a href="#contacts" class="header-link">Контакты</a>
+          </li>
+        </ul>
+        <button onclick="location.href = '#order'" class="btn header-btn-tour btn-reset">Хочу тур</button>
+        <button class="btn header-btn-back-call btn-reset">Обратный звонок</button>
+      </nav>
     </div>
-    <nav class="header-nav flex">
-      <ul class="header-list list-reset flex">
-        <li class="header-list-item">
-          <a href="#about-us" class="header-link">О&nbsp;нас</a>
-        </li>
-        <li class="header-list-item">
-          <a href="#services" class="header-link">Услуги</a>
-        </li>
-        <li class="header-list-item">
-          <a href="#benefits" class="header-link">Преимущества</a>
-        </li>
-        <li class="header-list-item">
-          <a href="#allocation" class="header-link">Размещение</a>
-        </li>
-        <li class="header-list-item">
-          <a href="#order" class="header-link">Блог</a>
-        </li>
-        <li class="header-list-item">
-          <a href="#contacts" class="header-link">Контакты</a>
-        </li>
-      </ul>
-      <button onclick="location.href = '#order'" class="btn header-btn-tour btn-reset">Хочу тур</button>
-      <button class="btn header-btn-back-call btn-reset">Обратный звонок</button>
-    </nav>
   </header>
   <main class="main">
     <section id="discount" class="discount">
@@ -385,32 +387,34 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="footer-zone">
-      <ul class="footer-list list-reset flex">
-        <li class="footer-item footer-first-column  flex">
-          <div class="footer-company-name footer-text">&copy;&nbsp;2012&ndash;2020 Управляющая компания Объединённой
-            сети &laquo;Лагуна Хотелс&raquo;</div>
-          <div class="footer-rights-reserved footer-text">Представленная на&nbsp;сайте информация носит справочный
-            характер и&nbsp;не&nbsp;является публичной офертой</div>
-          <div class="footer-terms footer-link">Пользовательское соглашение</div>
-        </li>
-        <li class="footer-item footer-second-column flex">
-          <div class="footer-address footer-text">11710, улица Юности, дом 5&nbsp;строение&nbsp;4, офис&nbsp;2</div>
-          <div class="footer-phone footer-link">
-            <a href="tel:+74995356434">+7&nbsp;499 535-64-34</a><br>
-            <a href="tel:+74950050544">+7&nbsp;495 005-05-44</a>
-          </div>
-          <div class="footer-mail footer-link">
-            <a href="mailto:lg.oona@mail.ru">lg.oona@mail.ru</a><br>
-            <a href="mailto:hotels.ln@mail.ru">hotels.ln@mail.ru</a>
-          </div>
-        </li>
-        <li class="footer-item footer-last-column flex">
-          <a href="#" class="social-link social-link1"></a>
-          <a href="#" class="social-link social-link2"></a>
-          <a href="#" class="social-link social-link3"></a>
-        </li>
-      </ul>
+    <div class="container">
+      <div class="footer-zone">
+        <ul class="footer-list list-reset flex">
+          <li class="footer-item footer-first-column  flex">
+            <div class="footer-company-name footer-text">&copy;&nbsp;2012&ndash;2020 Управляющая компания Объединённой
+              сети &laquo;Лагуна Хотелс&raquo;</div>
+            <div class="footer-rights-reserved footer-text">Представленная на&nbsp;сайте информация носит справочный
+              характер и&nbsp;не&nbsp;является публичной офертой</div>
+            <div class="footer-terms footer-link">Пользовательское соглашение</div>
+          </li>
+          <li class="footer-item footer-second-column flex">
+            <div class="footer-address footer-text">11710, улица Юности, дом 5&nbsp;строение&nbsp;4, офис&nbsp;2</div>
+            <div class="footer-phone footer-link">
+              <a href="tel:+74995356434">+7&nbsp;499 535-64-34</a><br>
+              <a href="tel:+74950050544">+7&nbsp;495 005-05-44</a>
+            </div>
+            <div class="footer-mail footer-link">
+              <a href="mailto:lg.oona@mail.ru">lg.oona@mail.ru</a><br>
+              <a href="mailto:hotels.ln@mail.ru">hotels.ln@mail.ru</a>
+            </div>
+          </li>
+          <li class="footer-item footer-last-column flex">
+            <a href="#" class="social-link social-link1"></a>
+            <a href="#" class="social-link social-link2"></a>
+            <a href="#" class="social-link social-link3"></a>
+          </li>
+        </ul>
+      </div>
     </div>
   </footer>
 </body>

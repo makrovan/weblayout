@@ -58,6 +58,7 @@ body {
   font-family: 'Muller', sans-serif;
   font-weight: 400;
   background-color: #f1f1f1;
+  padding: 30px 0;
 }
 
 /* glob */
@@ -99,11 +100,12 @@ body {
 .container {
   width: 1200px;
   padding: 0 15px;
-  margin: 70px auto 0;
+  margin: 0 auto 70px;
 }
 
 .section-title {
-  margin: 0 0 20px 40px;
+  margin: 0;
+  padding: 0 0 20px 40px;
   font-family: 'Muller';
   font-style: normal;
   font-weight: 400;
@@ -130,12 +132,6 @@ body {
 }
 
 /* header */
-.header {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 30px auto 0;
-}
-
 .header-up {
   align-items: center;
 }
@@ -489,6 +485,9 @@ body {
   min-height: 256px;
   background-color: #e9e9e9;
   border-radius: 15px;
+}
+
+.order-title {
   padding-top: 45px;
 }
 
@@ -503,14 +502,19 @@ body {
 
 .order-item {
   flex-direction: column;
-  margin-top: 31px;
-  margin-left: 41px;
+  padding-top: 31px;
+  padding-bottom: 31px;
+}
+
+.order-item:not(:first-child),
+.order-item:not(:last-child) {
+  padding-left: 41px;
 }
 
 .order-city {
   width: 169px;
   height: 43px;
-  margin-left: 28px;
+  padding-left: 28px;
 }
 
 .order-item-descr {
@@ -556,7 +560,8 @@ body {
 .order-button {
   width: 108px;
   height: 42px;
-  margin-top: 32px;
+  margin-top: 31px;
+  margin-bottom: 31px;
   margin-left: 50px;
   margin-right: 27px;
 }
@@ -570,6 +575,7 @@ body {
   background-repeat: no-repeat;
   background-size: 653px 528px;
   background-position: center right 45px;
+  border-radius: 15px;
 }
 
 .contacts-list {
@@ -652,11 +658,13 @@ body {
   margin-top: 45px;
 }
 
+.contacts > .container {
+  margin-bottom: 30px;
+}
+
 /* footer */
 .footer-zone {
-  width: 1170px;
   height: 341px;
-  margin: 40px auto 30px;
   background: #333;
   border-radius: 15px;
   background-image: url('../img/footer-logo.svg');
@@ -732,12 +740,18 @@ body {
   background-image: url('../img/footer-social-network1.svg');
 }
 
-.social-link2 {
+.social-link:not(:first-child){
   margin-top: 20px;
-  margin-bottom: 20px;
+}
+
+.social-link2 {
   background-image: url('../img/ok.png');
 }
 
 .social-link3 {
   background-image: url('../img/footer-social-network2.svg');
+}
+
+.footer > .container {
+  margin-bottom: 0;
 }
