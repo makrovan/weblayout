@@ -493,7 +493,8 @@ body {
 
 .order-list {
   width: 1080px;
-  height: 106px;
+  padding: 32px 28px;
+  justify-content: space-between;
   margin: auto;
   background-color: #fff;
   border-radius: 15px;
@@ -502,19 +503,7 @@ body {
 
 .order-item {
   flex-direction: column;
-  padding-top: 31px;
-  padding-bottom: 31px;
-}
-
-.order-item:not(:first-child),
-.order-item:not(:last-child) {
-  padding-left: 41px;
-}
-
-.order-city {
-  width: 169px;
-  height: 43px;
-  padding-left: 28px;
+  justify-content: space-between;
 }
 
 .order-item-descr {
@@ -527,7 +516,6 @@ body {
 }
 
 .order-item-select {
-  margin-top: 15px;
   border: none;
   font-family: 'Muller';
   font-style: normal;
@@ -537,33 +525,9 @@ body {
   color: #000;
 }
 
-.country-select {
-  width: 169px;
-}
-
-.city-select {
-  width: 169px;
-}
-
-.date-select {
-  width: 121px;
-}
-
-.nights-select {
-  width: 121px;
-}
-
-.tourists-select {
-  width: 121px;
-}
-
 .order-button {
   width: 108px;
   height: 42px;
-  margin-top: 31px;
-  margin-bottom: 31px;
-  margin-left: 50px;
-  margin-right: 27px;
 }
 
 /* contacts */
