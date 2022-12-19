@@ -333,21 +333,29 @@ body {
   color: #cc9933;
 }
 
-.services-item-link-extra {}
-
 /* benefits */
 .benefits-items {
   min-height: 574px;
+  flex-wrap: wrap;
 }
 
 .benefits-item {
   width: 276px;
+  height: 276px;
   min-height: 276px;
   padding: 116px 42px 32px 45px;
   background-color: #fff;
   border-radius: 15px;
   background-position: 45px 40px;
   background-repeat: no-repeat;
+}
+
+.benefits-item:not(:nth-child(4n)) {
+  margin-right: 22px;
+}
+
+.benefits-item:not(:nth-last-child(-n + 4)){
+  margin-bottom: 22px;
 }
 
 .benefits-item-1 {
