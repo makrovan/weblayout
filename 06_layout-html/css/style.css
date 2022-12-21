@@ -8,9 +8,32 @@ html {
   box-sizing: inherit;
 }
 
+:root{
+  --yellow-color: #cc9933;
+  --yellow-color2: #a47312;
+}
+
 a {
   color: inherit;
   text-decoration: none;
+  transition: color 0.3s ease-in-out,
+    outline 0.3s ease-in-out;
+}
+
+a:focus {
+  color: var(--yellow-color);
+  outline: none;
+}
+
+a:hover {
+  color: var(--yellow-color);
+  outline: 1px solid var(--yellow-color);
+  outline-offset: 5px;
+
+}
+
+a:active {
+  color: var(--yellow-color2);
 }
 
 img {
@@ -77,20 +100,33 @@ body {
 .btn-reset {
   padding: 0;
   border: none;
-  background-color: inherit;
+  /* background-color: inherit; */
   cursor: pointer;
 }
 
 .btn {
-  border: 1px solid #cc9933;
+  border: 1px solid var(--yellow-color);
   border-radius: 10px;
   font-family: 'Muller';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  color: #cc9933;
+  color: var(--yellow-color);
   background: transparent;
+  transition: color 0.3s ease-in-out,
+    background 0.3s ease-in-out;
+}
+
+.btn:focus,
+.btn:hover {
+  background: var(--yellow-color);
+  color: #fff;
+  outline: none;
+}
+
+.btn:active {
+  background: var(--yellow-color2);
 }
 
 .flex {
@@ -152,7 +188,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  color: #cc9933;
+  color: var(--yellow-color);
   background-image: url('../img/keyboard_tab.svg');
   background-position: left center;
   background-repeat: no-repeat;
@@ -330,7 +366,7 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 200%;
-  color: #cc9933;
+  color: var(--yellow-color);
 }
 
 /* benefits */
@@ -354,7 +390,7 @@ body {
   margin-right: 22px;
 }
 
-.benefits-item:not(:nth-last-child(-n + 4)){
+.benefits-item:not(:nth-last-child(-n + 4)) {
   margin-bottom: 22px;
 }
 
@@ -411,6 +447,7 @@ body {
   background-color: #fff;
   border-radius: 15px;
   overflow: hidden;
+  position: relative;
 }
 
 .allocation-item-up-line {
@@ -474,17 +511,43 @@ body {
 }
 
 .allocation-item:last-child {
-  background-image: url('../img/41.png');
-  background-size: cover;
-  background-repeat: no-repeat;
+  padding: 8px;
+  background-color: transparent;
 }
 
 .allocation-item-link {
-  margin: auto auto 27px;
   font-weight: 500;
   font-size: 20px;
   line-height: 200%;
   color: #fff;
+  padding-bottom: 27px;
+  align-items: flex-end;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.allocation-item-link::after {
+  content: "";
+  border-radius: 15px;
+  border: 1px solid var(--yellow-color);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.allocation-item-link:hover:after {
+  opacity: 1;
+}
+
+.allocation-item-link-text {
   align-items: center;
 }
 
@@ -602,7 +665,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color: #cc9933;
+  color: var(--yellow-color);
 }
 
 .contacts-list-emali {
@@ -630,7 +693,7 @@ body {
   margin-top: 45px;
 }
 
-.contacts > .container {
+.contacts>.container {
   margin-bottom: 30px;
 }
 
@@ -670,7 +733,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color: #cc9933;
+  color: var(--yellow-color);
 }
 
 .footer-rights-reserved {
@@ -700,30 +763,30 @@ body {
 }
 
 .social-link {
-  display: block;
   width: 25px;
   height: 25px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
 }
 
-.social-link1 {
-  background-image: url('../img/footer-social-network1.svg');
-}
-
-.social-link:not(:first-child){
+.social-link:not(:first-child) {
   margin-top: 20px;
 }
 
-.social-link2 {
-  background-image: url('../img/ok.png');
+.social-link svg {
+  fill: #999;
 }
 
-.social-link3 {
-  background-image: url('../img/footer-social-network2.svg');
+.social-link:focus svg {
+  fill: var(--yellow-color);
 }
 
-.footer > .container {
+.social-link:hover svg {
+  fill: var(--yellow-color);
+}
+
+.social-link:active svg {
+  fill: var(--yellow-color2);
+}
+
+.footer>.container {
   margin-bottom: 0;
 }
