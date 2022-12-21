@@ -258,6 +258,8 @@ body {
   background-image: url('../img/discount_item1.jpg');
 }
 
+/* background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%); */
+
 .discount-item2 {
   background-image: url('../img/discount_item2.jpg');
 }
