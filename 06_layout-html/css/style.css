@@ -511,8 +511,11 @@ body {
 }
 
 .allocation-item:last-child {
-  padding: 8px;
   background-color: transparent;
+  background-image: url('../img/41.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 358px 424px;
 }
 
 .allocation-item-link {
@@ -543,7 +546,7 @@ body {
   transition: opacity 0.3s ease-in-out;
 }
 
-.allocation-item-link:hover:after {
+.allocation-item-link:focus:after {
   opacity: 1;
 }
 
