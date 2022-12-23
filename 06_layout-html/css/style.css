@@ -22,14 +22,13 @@ a {
 
 a:focus {
   color: var(--yellow-color);
-  outline: none;
+  outline: 1px solid var(--yellow-color);
+  outline-offset: 5px;
 }
 
 a:hover {
   color: var(--yellow-color);
-  outline: 1px solid var(--yellow-color);
-  outline-offset: 5px;
-
+  outline: none;
 }
 
 a:active {
@@ -515,7 +514,8 @@ body {
   background-image: url('../img/41.png');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 358px 424px;
+  background-size: contain;
+  overflow: visible;
 }
 
 .allocation-item-link {
@@ -531,23 +531,6 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-}
-
-.allocation-item-link::after {
-  content: "";
-  border-radius: 15px;
-  border: 1px solid var(--yellow-color);
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.allocation-item-link:focus:after {
-  opacity: 1;
 }
 
 .allocation-item-link-text {
