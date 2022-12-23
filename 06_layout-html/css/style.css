@@ -446,7 +446,6 @@ body {
   background-color: #fff;
   border-radius: 15px;
   overflow: hidden;
-  position: relative;
 }
 
 .allocation-item-up-line {
@@ -510,11 +509,11 @@ body {
 }
 
 .allocation-item:last-child {
-  background-color: transparent;
   background-image: url('../img/41.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  position: relative;
   overflow: visible;
 }
 
