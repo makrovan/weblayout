@@ -13,6 +13,11 @@ a {
   text-decoration: none;
 }
 
+a:focus {
+  background: none;
+  color: inherit;
+}
+
 img {
   max-width: 100%;
 }
@@ -111,6 +116,10 @@ body {
 
 .btn {
   border-radius: 16px;
+}
+
+.btn:focus{
+  outline: none;
 }
 
 .section-title {
