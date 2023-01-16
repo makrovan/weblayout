@@ -8,6 +8,19 @@ html {
   box-sizing: inherit;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+:root {
+  --gap: 32px;
+}
+
 @font-face {
   font-family: 'Montserrat';
   src: local('MontserratBold'),
@@ -313,7 +326,9 @@ body {
 .aboutus__items__item {
   border-radius: 32px;
   align-items: flex-end;
-  width: 868px;
+  /* width: 868px; */
+  /* для 2 столбцов: */
+  width: calc((100% - (var(--gap) * 1)) / 2);
 }
 
 .aboutus__items li:first-child {
@@ -341,7 +356,7 @@ body {
 
 .aboutus__items__item__grey-elipse {
   border-radius: 32px;
-  width: 868px;
+  width: 100%;
   height: 196px;
   background: rgba(0, 0, 0, 0.5);
   padding: 50px;
@@ -422,6 +437,14 @@ body {
 }
 
 /* algorithm */
+.algorithm__content__column {
+  width: calc((100% - (var(--gap) * 1)) / 2);
+}
+
+.algorithm__content__column:not(:last-child){
+  margin-right: var(--gap);
+}
+
 .algorithm__content .algorithm__content__title {
   margin-bottom: 50px;
 }
@@ -466,8 +489,7 @@ body {
 
 .algorithm__content__descr__text {
   margin-bottom: 18px;
-  margin-right: 142px;
-  width: 758px;
+  padding-right: 118px;
 }
 
 .algorithm__content__btn1 {
@@ -508,8 +530,9 @@ body {
   color: #fff;
 }
 
-.algorithm__content__column2 {
-  align-items: flex-end;
+.algorithm__content__column:last-child {
+  flex-direction: column-reverse;
+  /* justify-content: flex-end; */
   font-size: 0;
 }
 
@@ -528,7 +551,7 @@ margin-bottom: 32px;
 }
 
 .faq__content__items__item__href {
-  width: 1770px;
+  width: 100%;
   height: 111px;
   align-items: center;
   justify-content: space-between;
