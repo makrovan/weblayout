@@ -433,13 +433,13 @@ body {
 }
 
 .aboutus__items__item__desc__text1 {
-  padding-top: auto;
+  /* padding-top: auto; */
   max-width: 452px;
   margin-left: 120px;
 }
 
 .aboutus__items__item__desc__text2 {
-  padding-top: auto;
+  /* padding-top: auto; */
   max-width: 452px;
   margin-left: 103px;
 }
