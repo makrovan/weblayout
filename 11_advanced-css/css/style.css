@@ -687,6 +687,7 @@ margin-bottom: 32px;
 .footer__content__social:focus {
   outline-offset: 1px;
   outline: 2px solid #ff9900;
+  background: none;
 }
 
 .footer__content__social:active {
