@@ -326,7 +326,6 @@ body {
 .aboutus__items__item {
   border-radius: 32px;
   align-items: flex-end;
-  /* width: 868px; */
   /* для 2 столбцов: */
   width: calc((100% - (var(--gap) * 1)) / 2);
 }
@@ -344,9 +343,8 @@ body {
 .aboutus__items li:not(:first-child) {
   border: 1px solid #cacaca;
   background: #fff;
-  /* max-width: 870px; */
   height: 295px;
-  padding-bottom: 65px;
+  padding-bottom: 64px;
   padding-left: 60px;
 }
 
@@ -401,39 +399,45 @@ body {
 }
 
 .aboutus__items__item__pic1 {
+  display: block;
   position: absolute;
 }
 
 .aboutus__items__item__pic2 {
   position: relative;
+  min-width: 119px;
+  min-height: 132px;
   left: 70px;
   bottom: 32px;
 }
 
 .aboutus__items__item__pic3 {
   position: relative;
+  min-width: 135px;
+  min-height: 135px;
   left: 54px;
   bottom: 29px;
 }
 
-.aboutus__items__item__desc1 {
+.aboutus__items__item__desc {
+  width: 100%;
+}
+
+.aboutus__items__item__desc__text1 {
+  padding-top: auto;
+  max-width: 452px;
   margin-left: 120px;
 }
 
-.aboutus__items__item__desc__text {
-  width: 450px;
-  margin: 0;
-  display: inline-block;
-  margin-top: auto;
+.aboutus__items__item__desc__text2 {
+  padding-top: auto;
+  max-width: 452px;
+  margin-left: 103px;
 }
 
 .aboutus__items__item__headr {
   margin: 0;
   margin-bottom: 8px;
-}
-
-.aboutus__items__item__desc2 {
-  margin-left: 102px;
 }
 
 /* algorithm */
