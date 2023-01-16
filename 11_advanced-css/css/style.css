@@ -199,7 +199,7 @@ body {
   justify-content: space-between;
 }
 
-.header__nav__list__item__href {
+.header__nav__list__item-href {
   position: relative;
   text-decoration: none;
   font-family: 'Montserrat';
@@ -212,7 +212,7 @@ body {
     color 0.3s ease-in-out;
 }
 
-.header__nav__list__item__href::after {
+.header__nav__list__item-href::after {
   content: "";
   position: absolute;
   left: 0;
@@ -224,16 +224,16 @@ body {
   transition: opacity 0.3s ease-in-out;
 }
 
-.header__nav__list__item__href:hover::after {
+.header__nav__list__item-href:hover::after {
   opacity: 1;
 }
 
-.header__nav__list__item__href:focus {
+.header__nav__list__item-href:focus {
   outline-offset: 1px;
   outline: 2px solid #ff9900;
 }
 
-.header__nav__list__item__href:active {
+.header__nav__list__item-href:active {
   color: #e1670e;
 }
 
@@ -280,7 +280,7 @@ body {
 .hero__content {
   max-width: 1770px;
   height: 620px;
-  background-image: url('/img/hero_back1.jpg');
+  background-image: url('../img/hero_back1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -342,23 +342,11 @@ body {
 .aboutus__items li:first-child {
   margin-right: 32px;
   height: 622px;
-  background-image: url('/img/aboutas_back1.jpg');
+  background-image: url('../img/aboutas_back1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   flex-direction: row;
-}
-
-.aboutus__items li:not(:first-child) {
-  border: 1px solid #cacaca;
-  background: #fff;
-  height: 295px;
-  padding-bottom: 64px;
-  padding-left: 60px;
-}
-
-.aboutus__items li:nth-child(2) {
-  margin-bottom: 32px;
 }
 
 .aboutus__items__item__grey-elipse {
@@ -407,41 +395,27 @@ body {
   background: #e1670e;
 }
 
-.aboutus__items__item__pic1 {
-  display: block;
-  position: absolute;
+.aboutus__items__item:nth-child(2n) {
+  margin-bottom: var(--gap);
 }
 
-.aboutus__items__item__pic2 {
-  position: relative;
-  min-width: 119px;
-  min-height: 132px;
-  left: 70px;
-  bottom: 32px;
+.aboutus__items li:not(:first-child) {
+  border: 1px solid #cacaca;
+  height: 295px;
+  padding-top: 64px;
+  padding-left: 298px;
+  background-position: left 60px center;
+  background-repeat: no-repeat;
+  background-size: 190px 165px;
 }
 
-.aboutus__items__item__pic3 {
-  position: relative;
-  min-width: 135px;
-  min-height: 135px;
-  left: 54px;
-  bottom: 29px;
+.aboutus__items__item:nth-child(2) {
+  background-image: url('../img/aboutus_item_img1.svg');
 }
 
-.aboutus__items__item__desc {
-  width: 100%;
-}
+.aboutus__items__item:nth-child(3) {
+  background-image: url('../img/aboutus_item_img2.svg');
 
-.aboutus__items__item__desc__text1 {
-  /* padding-top: auto; */
-  max-width: 452px;
-  margin-left: 120px;
-}
-
-.aboutus__items__item__desc__text2 {
-  /* padding-top: auto; */
-  max-width: 452px;
-  margin-left: 103px;
 }
 
 .aboutus__items__item__headr {
