@@ -34,9 +34,7 @@
   .card-text__headr {
     text-align: center;
   }
-}
 
-@media(max-width: 1440px) {
   .footer__desc {
     line-height: 30px;
   }
@@ -114,6 +112,10 @@
 }
 
 @media(max-width: 1200px) {
+  br {
+    display: inline;
+  }
+
   .container {
     padding: 0 50px;
     margin-bottom: 80px;
@@ -123,12 +125,33 @@
     margin-bottom: 40px;
   }
 
+  .header__logo>img {
+    width: 150px;
+    height: 48px;
+  }
+
+  .header__search {
+    margin-right: 50px;
+  }
+
+  .hero>.container {
+    margin-bottom: 36px;
+  }
+
+  .hero__container {
+    height: 668px;
+    /* background-position: center 47%; */
+    padding-top: 160px;
+    padding-left: 77px;
+  }
+
   .hero__title {
     font-family: 'Montserrat';
     /* font-style: extrabold; */
     font-size: 60px;
     line-height: 73px;
     /* line-height: 100%; */
+    margin-bottom: 16px;
   }
 
   .hero__descr {
@@ -138,6 +161,8 @@
     font-size: 20px;
     line-height: 24px;
     /* line-height: 100%; */
+    margin-top: 0;
+    margin-bottom: 60px;
   }
 
   .aboutus__items {
@@ -147,6 +172,10 @@
 
   .items__item {
     width: 100%;
+  }
+
+  .aboutus__desc {
+    margin-bottom: 59px;
   }
 
   .items__item:nth-child(2n) {
@@ -166,71 +195,6 @@
     justify-content: flex-start;
     /* padding-top: 6px; */
     /* padding-left: 32px; */
-  }
-
-  .card__svg {
-    width: 41%;
-    height: 100%;
-    background-size: auto;
-  }
-
-  .card__text {
-    margin: 0;
-    width: 452px;
-  }
-
-  .card-text__headr {
-    text-align: left;
-  }
-}
-
-@media(max-width: 1024px) {
-  .hero>.container {
-    margin-bottom: 36px;
-  }
-
-  .header__logo>img {
-    width: 150px;
-    height: 48px;
-  }
-
-  .header__search {
-    margin-right: 50px;
-  }
-
-  .hero__container {
-    height: 668px;
-    /* background-position: center 47%; */
-    padding-top: 160px;
-    padding-left: 77px;
-  }
-
-  .hero__title {
-    margin-bottom: 16px;
-  }
-
-  .hero__descr {
-    margin-top: 0;
-    margin-bottom: 60px;
-  }
-
-  br {
-    display: inline;
-  }
-
-  .aboutus__desc {
-    margin-bottom: 59px;
-  }
-
-  .card__svg {
-    width: 31%;
-  }
-
-  .card__text {
-    margin-left: 8px;
-  }
-
-  .aboutus__items .items__item:not(:first-child) {
     padding-top: 0;
   }
 
@@ -240,6 +204,22 @@
 
   .aboutus__items .items__item:nth-child(3) .card__svg {
     background-position: 58% center;
+  }
+
+  .card__svg {
+    width: 31%;
+    height: 100%;
+    background-size: auto;
+  }
+
+  .card-text__headr {
+    text-align: left;
+  }
+
+  .card__text {
+    margin: 0;
+    width: 452px;
+    margin-left: 8px;
   }
 
   .algorithm-items {
