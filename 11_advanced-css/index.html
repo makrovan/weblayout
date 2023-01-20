@@ -79,9 +79,9 @@
             высокую востребованность позиций, занимаемых участниками в&nbsp;отношении поставленных задач.
             Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что высококачественный прототип будущего проекта способствует
             повышению качества экспериментов.</p>
-            <div class="aboutus__imgblock">
-              <img src="img/aboutas_back1.png" alt="aboutus_picture">
-            </div>
+          <div class="aboutus__imgblock">
+            <img src="img/aboutas_back1.png" alt="aboutus_picture">
+          </div>
           <ul class="aboutus__items items list-reset flex">
             <li class="items__item flex">
               <div class="items__grey-elipse flex">
@@ -116,21 +116,21 @@
     <section id="algorithm" class="algorithm">
       <div class="container">
         <h2 class="algorithm__title section-title">Как мы&nbsp;работаем</h2>
-        <ul class="algorithm__items algorithm-items list-reset flex">
+        <ul class="algorithm__items tabs-nav algorithm-items list-reset flex">
           <li>
-            <a class="algorithm-items__item" href="#">1&nbsp;шаг</a>
+            <button class="algorithm-items__item btn-reset tabs-nav__href tabs-nav__href--active" data-path="one">1&nbsp;шаг</button>
           </li>
           <li>
-            <a class="algorithm-items__item" href="#">2&nbsp;шаг</a>
+            <button class="algorithm-items__item btn-reset tabs-nav__href" data-path="two">2&nbsp;шаг</button>
           </li>
           <li>
-            <a class="algorithm-items__item" href="#">3&nbsp;шаг</a>
+            <button class="algorithm-items__item btn-reset tabs-nav__href" data-path="three">3&nbsp;шаг</button>
           </li>
           <li>
-            <a class="algorithm-items__item" href="#">4&nbsp;шаг</a>
+            <button class="algorithm-items__item btn-reset tabs-nav__href" data-path="four">4&nbsp;шаг</button>
           </li>
         </ul>
-        <div class="algorithm__container flex">
+        <div class="algorithm__container flex tabs-item tabs-item--active" data-target="one">
           <div class="algorithm__column">
             <h3 class="section-subtitle algorithm__subheadr">Проводим консультацию</h3>
             <p class="algorithm__text section-desc">Влечёт за&nbsp;собой процесс внедрения
@@ -142,6 +142,59 @@
               с&nbsp;зарубежных источников, современные исследования подвергнуты целой серии независимых исследований.
               Кстати, стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные
               особенности картины в&nbsp;целом, однако конкретные выводы, разумеется, призваны к&nbsp;ответу.</p>
+            <button class="algorithm__btn1 btn btn-reset orange-btn">Подробнее</button>
+            <button class="algorithm__btn2 btn btn-reset">Договор</button>
+          </div>
+          <div class="algorithm__column">
+            <div class="algorithm__column-img">
+            </div>
+          </div>
+        </div>
+        <div class="algorithm__container flex tabs-item" data-target="two">
+          <div class="algorithm__column">
+            <h3 class="section-subtitle algorithm__subheadr">Составляем смету</h3>
+            <p class="algorithm__text section-desc">Внедрения и&nbsp;модернизации приоритизации разума над эмоциями.
+              В&nbsp;рамках спецификации современных стандартов, некоторые особенности внутренней политики будут
+              объективно рассмотрены соответствующими инстанциями. А&nbsp;также представители современных социальных
+              резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь
+              всего лишь частью общей картины, реплицированные с&nbsp;зарубежных источников, современные исследования
+              подвергнуты целой серии независимых исследований.</p>
+            <button class="algorithm__btn1 btn btn-reset orange-btn">Подробнее</button>
+            <button class="algorithm__btn2 btn btn-reset">Договор</button>
+          </div>
+          <div class="algorithm__column">
+            <div class="algorithm__column-img">
+            </div>
+          </div>
+        </div>
+        <div class="algorithm__container flex tabs-item" data-target="three">
+          <div class="algorithm__column">
+            <h3 class="section-subtitle algorithm__subheadr">Привлекаем подрядчиков</h3>
+            <p class="algorithm__text section-desc">Идейные соображения высшего порядка, а&nbsp;также новая модель
+              организационной деятельности требует анализа прогресса профессионального сообщества. Высокий уровень
+              вовлечения представителей целевой аудитории является чётким доказательством простого факта:
+              высококачественный прототип будущего проекта напрямую зависит от&nbsp;дальнейших направлений развития.
+              Разнообразный и&nbsp;богатый опыт говорит нам, что новая модель организационной деятельности говорит
+              о&nbsp;возможностях системы массового участия. Принимая во&nbsp;внимание показатели успешности, постоянное
+              информационно-пропагандистское обеспечение нашей деятельности позволяет выполнить важные задания
+              по&nbsp;разработке прогресса профессионального сообщества.</p>
+            <button class="algorithm__btn1 btn btn-reset orange-btn">Подробнее</button>
+            <button class="algorithm__btn2 btn btn-reset">Договор</button>
+          </div>
+          <div class="algorithm__column">
+            <div class="algorithm__column-img">
+            </div>
+          </div>
+        </div>
+        <div class="algorithm__container flex tabs-item" data-target="four">
+          <div class="algorithm__column">
+            <h3 class="section-subtitle algorithm__subheadr">Инспектируем все этапы работ</h3>
+            <p class="algorithm__text section-desc">Высокий уровень вовлечения представителей целевой аудитории является
+              чётким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит
+              от&nbsp;дальнейших направлений развития. Разнообразный и&nbsp;богатый опыт говорит нам, что новая модель
+              организационной деятельности говорит
+              о&nbsp;возможностях системы массового участия. Принимая во&nbsp;внимание показатели успешности, постоянное
+              информационно-пропагандистское обеспечение нашей деятельности позволяет.</p>
             <button class="algorithm__btn1 btn btn-reset orange-btn">Подробнее</button>
             <button class="algorithm__btn2 btn btn-reset">Договор</button>
           </div>

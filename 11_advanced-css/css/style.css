@@ -480,6 +480,7 @@ body {
 .algorithm-items__item {
   text-decoration: none;
   color: #000;
+  background-color: inherit;
 }
 
 .algorithm-items li:not(:last-child) .algorithm-items__item {
@@ -557,8 +558,20 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  /* position: relative; */
   overflow: hidden;
+}
+
+.tabs-nav__href--active {
+  color: #e1670e;
+}
+
+.tabs-item {
+  display: none;
+}
+
+.tabs-item--active {
+  display: flex;
 }
 
 /* faq */

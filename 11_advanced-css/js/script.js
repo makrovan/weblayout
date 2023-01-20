@@ -16,3 +16,22 @@ menuItem.forEach(function (e) {
     document.body.classList.remove('stop-scroll');
   })
 })
+
+let tabsHref = document.querySelectorAll('.tabs-nav__href');
+let tabsItem = document.querySelectorAll('.tabs-item');
+
+tabsHref.forEach(function (href) {
+  href.addEventListener('click', function (e) {
+    const path = e.currentTarget.dataset.path;
+
+    tabsHref.forEach(function (href) {
+      href.classList.remove('tabs-nav__href--active');
+      e.currentTarget.classList.add('tabs-nav__href--active');
+
+      tabsItem.forEach(function (item) {
+        item.classList.remove('tabs-item--active');
+        document.querySelector(`[data-target="${path}"]`).classList.add('tabs-item--active');
+      })
+    })
+  })
+})
