@@ -35,3 +35,16 @@ tabsHref.forEach(function (href) {
     })
   })
 })
+
+let swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  allowTouchMove: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});

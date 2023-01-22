@@ -286,15 +286,43 @@ body {
 }
 
 .hero__container {
+  position: relative;
   max-width: 100%;
   height: 620px;
+  border-radius: 32px;
+  overflow: hidden;
+  /* background-image: url('../img/hero_back1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; */
+  /* padding: 100px 0;
+  padding-left: 80px; */
+}
+
+.hero_content {
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 80px;
+  z-index: 999;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
   background-image: url('../img/hero_back1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: 32px;
-  padding: 100px 0;
-  padding-left: 80px;
+}
+
+/* .swiper-pagination-bullet-active {
+  background-color: #000 !important;
+} */
+.swiper-pagination > .swiper-pagination-bullet-active {
+  background-color: white;
 }
 
 .hero__title {

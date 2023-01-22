@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/media.css">
   <link rel="shortcut icon" href="img/favicon.svg" type="image/svg">
   <title>Евклид</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -59,10 +60,24 @@
     <section id="hero" class="hero">
       <div class="container">
         <div class="hero__container">
-          <h1 class="title hero__title">Проектные решения любой сложности</h1>
-          <p class="hero__descr">Есть над чем задуматься: базовые сценарии поведения пользователей и&nbsp;по&nbsp;сей
-            день остаются уделом проектантов</p>
-          <button class="btn hero__btn btn-reset orange-btn">Заказать расчёт</button>
+          <div class="hero_content">
+            <h1 class="title hero__title">Проектные решения любой сложности</h1>
+            <p class="hero__descr">Есть над чем задуматься: базовые сценарии поведения пользователей и&nbsp;по&nbsp;сей
+              день остаются уделом проектантов</p>
+            <button class="btn hero__btn btn-reset orange-btn">Заказать расчёт</button>
+          </div>
+          <!-- Slider main container -->
+          <div class="hero_swiper swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"></div>
+              <div class="swiper-slide"></div>
+              <div class="swiper-slide"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
         </div>
       </div>
     </section>
@@ -118,7 +133,8 @@
         <h2 class="algorithm__title section-title">Как мы&nbsp;работаем</h2>
         <ul class="algorithm__items tabs-nav algorithm-items list-reset flex">
           <li>
-            <button class="algorithm-items__item btn-reset tabs-nav__href tabs-nav__href--active" data-path="one">1&nbsp;шаг</button>
+            <button class="algorithm-items__item btn-reset tabs-nav__href tabs-nav__href--active"
+              data-path="one">1&nbsp;шаг</button>
           </li>
           <li>
             <button class="algorithm-items__item btn-reset tabs-nav__href" data-path="two">2&nbsp;шаг</button>
@@ -418,6 +434,7 @@
       </div>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="/js/script.js"></script>
 </body>
 
