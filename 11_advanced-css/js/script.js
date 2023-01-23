@@ -35,3 +35,35 @@ tabsHref.forEach(function (href) {
     })
   })
 })
+
+let swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  allowTouchMove: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
+
+new Accordion('.accordion-list', {
+  elementClass: 'accordion',
+  triggerClass: 'accordion__control',
+  panelClass: 'accordion__content',
+  activeClass: 'accordion--active'
+});
+
+let headerSearchBtn = document.querySelector('.header__search');
+let searchForm = document.querySelector('.header__action');
+let searchCloseBtn = document.querySelector('.header-action__btn-close');
+headerSearchBtn.addEventListener('click',
+  function () {
+    searchForm.classList.add('header__action--active');
+  })
+searchCloseBtn.addEventListener('click',
+  function () {
+    searchForm.classList.remove('header__action--active');
+  })
