@@ -514,8 +514,11 @@ body {
   color: #fff;
 }
 
-.items__grey-elipse .items__btn:hover,
-:focus {
+.items__grey-elipse .items__btn:hover {
+  background: #ff9900;
+}
+
+.items__grey-elipse .items__btn:focus {
   background: #ff9900;
 }
 
