@@ -182,7 +182,7 @@ h2 {
 }
 
 [class*="ground-pane"] {
-  filter: grayscale();
+  filter: grayscale(100%);
 }
 
 /* task4 - custom scroll */
