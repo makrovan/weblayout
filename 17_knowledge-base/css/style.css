@@ -1,0 +1,350 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #424242;
+  padding-top: 70px;
+  padding-left: 92px;
+  width: 2678px;
+  height: 640px;
+}
+
+h2 {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #333;
+  margin: 0;
+}
+
+/* task1 - checkbox */
+
+.task1 {
+  display: inline-block;
+  width: 176px;
+  height: 309px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 21px 29px 29px 30px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #333;
+  vertical-align: top;
+}
+
+.task1__checkbox {
+  display: block;
+  padding-left: 24px;
+  margin-top: 20px;
+}
+
+.checkbox {
+  position: relative;
+  cursor: pointer;
+}
+
+.checkbox__input {
+  display: none;
+}
+
+.checkbox__checked {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #999;
+  border-radius: 3px;
+}
+
+.checkbox__checked::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  background-image: url('../img/rect.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 8px 7px;
+  transition: opacity .3s ease-in-out;
+}
+
+.checkbox__input:checked+.checkbox__checked {
+  border-color: #ccb26e;
+}
+
+.checkbox__input:checked+.checkbox__checked::before {
+  opacity: 1;
+}
+
+/* task2 - select */
+.task2 {
+  display: inline-block;
+  width: 176px;
+  height: 293px;
+  vertical-align: top;
+  margin-left: 58px;
+}
+
+.choices__inner {
+  background: #fff;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  min-height: auto;
+}
+
+.choices__placeholder {
+  opacity: 1;
+}
+
+.choices[data-type*=select-one] .choices__inner {
+  padding: 10px 15px;
+}
+
+.is-open .choices__inner {
+  border-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border: 1px solid #ccb26e;
+}
+
+.is-active.choices__list--dropdown,
+.is-active.choices__list[aria-expanded] {
+  border: 1px solid #ccb26e;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  padding-bottom: 20px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.choices__list--dropdown .choices__item--selectable,
+.choices__list[aria-expanded] .choices__item--selectable {
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-right: 0;
+  padding-bottom: 0;
+}
+
+[role="option"][data-value="Материал"] {
+  display: none;
+}
+
+.choices[data-type*=select-one]:after {
+  height: 8px;
+  width: 8px;
+  border: none;
+  border-right: 1px solid #666;
+  border-top: 1px solid #666;
+  transform: rotate(135deg);
+  margin-top: -6px;
+}
+
+.choices[data-type*=select-one].is-open:after {
+  border: none;
+  border-left: 1px solid #ccb26e;
+  border-bottom: 1px solid #ccb26e;
+  margin-top: -2px;
+}
+
+
+/* task3 - yandexcard */
+.task3 {
+  width: 460px;
+  height: 460px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 58px;
+}
+
+[class*="ground-pane"] {
+  filter: grayscale(100%);
+}
+
+/* task4 - custom scroll */
+.task4 {
+  display: inline-block;
+  width: 399px;
+  height: 310px;
+  background-color: #fff;
+  /* overflow-y: auto; */
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 170%;
+  color: #333333;
+  padding: 20px 30px;
+  vertical-align: top;
+  margin-left: 48px;
+}
+
+.simplebar-scrollbar:before {
+  width: 6px;
+  /* height: 70px; */
+  border-radius: 5px;
+  background: #ccb26e;
+}
+
+[data-simplebar] {
+  overflow: auto;
+}
+
+
+/* task5 - validator */
+.task5 {
+  display: inline-block;
+  width: 440px;
+  height: 410px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  vertical-align: top;
+  padding: 0 30px;
+  margin-left: 68px;
+}
+
+.form input {
+  width: 380px;
+  height: 60px;
+  background: #fff;
+  border: 1px solid #ff5c00;
+  border-radius: 10px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #999;
+  padding-left: 20px;
+}
+
+.form__wrapper:first-child {
+  position: relative;
+  margin-top: 20px;
+  padding-top: 18px;
+}
+
+.form__wrapper:not(:first-child) {
+  position: relative;
+  margin-top: 14px;
+  padding-top: 17px;
+}
+
+.form__btn-submit {
+  padding: 18.5px 53px;
+  background-color: #ff5c00;
+  border-radius: 10px;
+  margin-top: 31px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #fff;
+}
+
+.just-validate-error-label {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #ff5c00;
+}
+
+.task6 {
+  display: inline-block;
+  width: 375px;
+  height: 160px;
+  background: #fff;
+  margin-left: 58px;
+  padding: 20px 78px 20px 29px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 170%;
+  color: #333;
+}
+
+.tooltip__icon {
+  display: inline-block;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.tooltip__icon:hover > .tooltip__popup,
+.tooltip__icon:focus > .tooltip__popup {
+  opacity: 1;
+}
+
+.tooltip__icon:focus > svg > path{
+  fill: #ccb26e;
+}
+
+.tooltip__popup {
+  position: absolute;
+  top: -30px;
+  right: -80px;
+  width: auto;
+  background: #666;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #fff;
+  padding: 7px 14px;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+}
+
+.tooltipjs__icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.tooltipjs__icon:hover > svg > path,
+.tooltipjs__icon:focus > svg > path{
+  fill: #ccb26e;
+}
+
+.tippy-box {
+  background: #666;
+}
+
+.tippy-box[data-placement^='top'] > .tippy-arrow::before {
+  border-top-color: #666;
+}

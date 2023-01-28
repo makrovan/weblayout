@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css">
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Useful tools</title>
+</head>
+
+<body>
+  <div class="task1">
+    <h2 class="task1__header">Категории</h2>
+    <label for="check1" class="task1__checkbox checkbox">
+      <input type="checkbox" name="check1" id="check1" class="checkbox__input">Динозавры
+      <span class="checkbox__checked"></span>
+    </label>
+    <label for="check2" class="task1__checkbox checkbox">
+      <input type="checkbox" name="check2" id="check2" class="checkbox__input">Медведи
+      <span class="checkbox__checked"></span>
+    </label>
+    <label for="check3" class="task1__checkbox checkbox">
+      <input type="checkbox" name="check3" id="check3" class="checkbox__input">Косули
+      <span class="checkbox__checked"></span>
+    </label>
+    <label for="check4" class="task1__checkbox checkbox">
+      <input type="checkbox" name="check4" id="check4" class="checkbox__input">Лисы
+      <span class="checkbox__checked"></span>
+    </label>
+    <label for="check5" class="task1__checkbox checkbox">
+      <input type="checkbox" name="check5" id="check5" class="checkbox__input">Волки
+      <span class="checkbox__checked"></span>
+    </label>
+    <label for="check6" class="task1__checkbox checkbox">
+      <input type="checkbox" name="check6" id="check6" class="checkbox__input">Олени и&nbsp;лоси
+      <span class="checkbox__checked"></span>
+    </label>
+  </div>
+  <div class="task2">
+    <select name="select" class="task2__select select">
+      <option value="">Материал</option>
+      <option value="Древесина" class="select__value">Древесина</option>
+      <option value="Металл" class="select__value">Металл</option>
+      <option value="Камень" class="select__value">Камень</option>
+      <option value="Пластик" class="select__value">Пластик</option>
+      <option value="Композитный" class="select__value">Композитный</option>
+      <option value="Гипс" class="select__value">Гипс</option>
+    </select>
+  </div>
+  <div class="task3">
+    <div id="map" style="width: 460px; height: 460px"></div>
+  </div>
+  <div class="task4" data-simplebar>Сложно сказать, почему многие известные личности представлены в&nbsp;исключительно
+    положительном свете. Лишь активно развивающиеся страны третьего мира будут объективно рассмотрены соответствующими
+    инстанциями. Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что высокотехнологичная концепция общественного уклада
+    представляет собой интересный эксперимент проверки глубокомысленных рассуждений. Имеется спорная точка зрения,
+    гласящая примерно следующее: непосредственные участники технического прогресса освещают чрезвычайно интересные
+    особенности картины в&nbsp;целом, однако конкретные выводы, разумеется, обнародованы. Значимость этих проблем
+    настолько очевидна, что социально-экономическое развитие, а&nbsp;также свежий взгляд на&nbsp;привычные
+    вещи&nbsp;&mdash; безусловно открывает новые горизонты для первоочередных требований.
+  </div>
+  <div class="task5">
+    <form action="#" class="task5__form form" id="form" autocomplete="off">
+      <div class="form__wrapper">
+        <input class="form__input-name" name="Имя" type="text" placeholder="Имя*" id="name">
+      </div>
+      <div class="form__wrapper">
+        <input class="form__input-tel" name="tel" type="tel" placeholder="Телефон*" id="tel">
+      </div>
+      <div class="form__wrapper">
+        <input class="form__input-email" name="email" type="email" placeholder="E-mail*" id="email">
+      </div>
+      <button class="btn btn-primary form__btn-submit" id="submit-btn">Заказать</button>
+    </form>
+  </div>
+  <div class="task6">
+    <!-- <div class="task6__tooltip tooltip">
+      Следует отметить, что<br> социально-экономическое развитие способствует повышению качества переосмысления
+      внешнеэкономических политик.
+      <div class="tooltip__icon" tabindex="0">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM8 3C7.33333 3 7 3.31919 7 3.95758C7 4.60026 7.33333 4.92159 8 4.92159C8.33333 4.92159 8.58233 4.83805 8.74699 4.67095C8.91566 4.49957 9 4.26178 9 3.95758C9 3.31919 8.66667 3 8 3ZM7.07831 13H8.91566V5.81491H7.07831V13Z"
+            fill="#BCBCBC" />
+        </svg>
+        <div class="tooltip__popup">Глава 2, страница 176</div>
+      </div>
+    </div> -->
+    <div class="task6__tooltip tooltipjs">
+      Следует отметить, что<br> социально-экономическое развитие способствует повышению качества переосмысления
+      внешнеэкономических политик.
+      <div class="tooltipjs__icon" id="tooltip__icon" tabindex="0">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM8 3C7.33333 3 7 3.31919 7 3.95758C7 4.60026 7.33333 4.92159 8 4.92159C8.33333 4.92159 8.58233 4.83805 8.74699 4.67095C8.91566 4.49957 9 4.26178 9 3.95758C9 3.31919 8.66667 3 8 3ZM7.07831 13H8.91566V5.81491H7.07831V13Z"
+            fill="#BCBCBC" />
+        </svg>
+      </div>
+    </div>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=c124690e-6fa4-4f9e-88f9-fc5ccbd1c4fa&lang=ru_RU"></script>
+  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+  <script src="lib/inputmask.min.js"></script>
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
