@@ -36,6 +36,10 @@
     padding-bottom: 48px;
   }
 
+  .teacher-card {
+    max-width: 330px;
+  }
+
   .teacher-card__desc {
     margin-bottom: 25px;
     margin-right: -5px;
@@ -256,6 +260,10 @@
   .teachers__container {
     padding-top: 48px;
     padding-bottom: 23px;
+  }
+
+  .teacher-card {
+    max-width: 290px;
   }
 
   .teachers__title {
