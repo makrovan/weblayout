@@ -1,0 +1,293 @@
+@media(max-width: 1439px) {
+  .global-container {
+    padding-left: 39px;
+    padding-right: 39px;
+  }
+
+  .hero__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 100%;
+    margin-bottom: 15px;
+  }
+
+  .hero__desc {
+    padding-right: 25px;
+    margin-bottom: 64px;
+  }
+
+  .hero__img {
+    margin-left: -60px;
+    padding-top: 107px;
+  }
+
+  .benefits-card {
+    flex-direction: column;
+  }
+
+  .benefits-card__desc {
+    padding-left: 0;
+    margin-top: 12px;
+    margin-bottom: 75px;
+  }
+
+  .teachers__container {
+    padding-bottom: 48px;
+  }
+
+  .teacher-card {
+    max-width: 330px;
+  }
+
+  .teacher-card__desc {
+    margin-bottom: 25px;
+    margin-right: -5px;
+  }
+
+  .teacher-card__desc>br {
+    display: none;
+  }
+
+  .courses__container {
+    padding-bottom: 50px;
+  }
+
+  .course-card__label {
+    right: 6px;
+  }
+
+  .course-card__desc {
+    height: 376px;
+  }
+
+  .course-card__button {
+    width: 195px;
+  }
+}
+
+@media(max-width: 767px) {
+  .global-container {
+    padding-left: 33px;
+    padding-right: 33px;
+  }
+
+  .header {
+    padding-bottom: 28px;
+  }
+
+  .header__column1 {
+    text-align: center;
+  }
+
+  .header__column3 {
+    text-align: center;
+  }
+
+  .header__nav {
+    padding-top: 25px;
+  }
+
+  .hero {
+    min-height: 567px;
+  }
+
+  .hero__title {
+    margin-top: 77px;
+  }
+
+  .hero__picture {
+    display: none;
+  }
+
+  .benefits__img {
+    margin-top: 0;
+  }
+
+  .benefits-card__desc {
+    margin-bottom: 53px;
+  }
+
+  .course-card__desc {
+    height: 473px;
+  }
+
+  .course-card__title {
+    margin-right: -10px;
+    line-height: 140%;
+  }
+
+  .course-card:last-child .course-card__desc {
+    padding-top: 34px;
+  }
+
+  .course-card:last-child .course-card__text {
+    margin-right: -5px;
+  }
+
+  .course-card__button {
+    width: 180px;
+  }
+}
+
+@media(max-width: 575px) {
+  .global-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .header__column1 {
+    text-align: left;
+  }
+
+  .header__column2 {
+    display: block;
+    padding-top: 30px;
+  }
+
+  .header__column3 {
+    display: none;
+  }
+
+  .header__burger {
+    margin-right: 0;
+    margin-left: auto;
+  }
+
+  .burger {
+    position: relative;
+    display: block;
+    margin-right: 5px;
+    width: 20px;
+    height: 16px;
+    padding: 0;
+    background: none;
+    color: #fff;
+  }
+
+  .burger__line {
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    height: 2px;
+    background-color: currentColor;
+    transform: translateX(-50%);
+  }
+
+  .burger__line:first-child {
+    top: 0;
+  }
+
+  .burger__line:last-child {
+    bottom: 0;
+  }
+
+  .burger__line:nth-child(2) {
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  .hero {
+    min-height: 351px;
+  }
+
+  .hero__img {
+    display: none;
+  }
+
+  .hero__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 100%;
+    margin-top: 48px;
+    margin-bottom: 5px;
+  }
+
+  .hero__desc {
+    padding-right: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    margin-bottom: 45px;
+  }
+
+  .hero__btn {
+    width: 214px;
+    height: 60px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .benefits {
+    padding-top: 50px;
+    min-height: 693px;
+  }
+
+  .benefits__img {
+    display: none;
+  }
+
+  .benefits__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    margin-bottom: 0;
+  }
+
+  .benefits__title>br {
+    display: none;
+  }
+
+  .benefits__desc>br {
+    display: none;
+  }
+
+  .benefits-card {
+    flex-direction: row;
+  }
+
+  .benefits-card__desc {
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding-left: 30px;
+    margin-right: -1px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+  }
+
+  .teachers__container {
+    padding-top: 48px;
+    padding-bottom: 23px;
+  }
+
+  .teacher-card {
+    max-width: 290px;
+  }
+
+  .teachers__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+  }
+
+  .courses__container {
+    padding-top: 47px;
+    padding-bottom: 22px;
+  }
+
+  .courses__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+  }
+
+  .course-card__title {
+    margin-right: 5px;
+  }
+
+  .course-card__button {
+    width: 195px;
+  }
+}
